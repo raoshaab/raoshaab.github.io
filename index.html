@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome here!</title>
+
+
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.png" alt="Devender" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Devender">Devender</h1>
+
+          <p class="title">Application Security Engineer</p>
+		  
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:devhere@tutanota.com" class="contact-link">devhere@tutanota.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Alias</p>
+
+              <a href="https://twitter.com/root_rao" class="contact-link">root_rao</a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/devender-rao" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+		  
+          <li class="social-item">
+            <a href="https://github.com/raoshaab" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/root_rao" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Tools</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blogs</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Who Am I</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+				I'm a Application Security Engineer who practises the art of discovering Security Vulnerabilities and loopholes in the Web, Android, as Well as Cloud applicaians.
+				.
+          </p>
+		  <p>
+				Basically I do everything related to <b>Application Security ! 	
+          </p>
+		  
+        </section>
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">What I'm Doing</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/ava-1.png" alt="Mal" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Penetration Testing</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Conduct tactical assessments in Application Security(web,api and mobile), threat analysis, internal and external network architecture.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/ava-2.png" alt="CTI" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>SEIM Expert</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                   SEIM Expert Unleashing the Power of Security Event and Information Management
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/ava-3.png" alt="Tool Development" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tool Development</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Develop tools that will assist security engineers, security researchers and red teamers.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/ava-1.png" alt="Mal" width="80" data-modal-img>
+              </figure>
+
+              
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Penetration Testing</h4>
+
+            
+
+              <div data-modal-text>
+                <p>
+					
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+       
+      </article>
+
+
+      <!--
+        - #PORTFOLIO #TOOLS
+      -->
+
+      <article class="tools" data-page="tools">
+
+        <header>
+          <h2 class="h2 article-title">Tools</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item  active">
+              <a href="https://github.com/raoshaab/Pen-Andro/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/t-1.gif" alt="Pen-And0" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pen-And0</h3>
+
+                <p class="project-category">Pentetration Testing</p>
+
+              </a>
+            </li>
+			
+			<li class="project-item  active">
+              <a href="https://github.com/raoshaab/Flash-Repo" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/t-3.jpg" alt="Flash-Repo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Flash Repo</h3>
+
+                <p class="project-category">Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/raoshaab/frogy" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/t-2.jpg" alt="Frogy" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Frogy</h3>
+
+                <p class="project-category">Pentesting</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" >
+              <a href="https://github.com/raoshaab/Burpsuite-Launcher" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/t-4.jpg" alt="Burpsuite-Launcher" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Burpsuite-Launcher</h3>
+
+                <p class="project-category">Pentesting</p>
+
+              </a>
+            </li>
+
+          	
+			
+			
+			
+		<!--
+        Add tools above
+		-->
+			
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blogs" data-page="blogs">
+
+        <header>
+          <h2 class="h2 article-title">Blogs</h2>
+        </header>
+
+        <section class="blog-posts">
+		
+		    <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Personal</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Corporate</button>
+            </li>
+
+
+          </ul>
+		  
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+			  <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Personal</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Corporate</button>
+              </li>
+
+         
+
+            </ul>
+
+          </div>
+		  		 
+
+          <ul class="blog-posts-list">
+
+			<li class="project-item  active" data-filter-item data-category="corporate">
+              <a href="https://raoshaab.medium.com/hack-the-hackers-7d4ffbc70858"    target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/b-5.jpg" alt="warhawk" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Corporate</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-05-04">May 4, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Hack the HAckers</h3>
+
+                  <p class="blog-text">
+                    Discovered security bugs in Online hacking platform THM Try Hack Me . 
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+			
+		    <li class="project-item  active" data-filter-item data-category="corporate">
+              <a href="https://raoshaab.medium.com/genymotion-virtualbox-configuration-error-solved-a787bacf991"    target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/b-6.jpg" alt="havoc" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Personal</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-09-25">Sep 25, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Genymotion Virtualbox configuration error solved !!</h3>
+
+                  <p class="blog-text">
+                    Solve Genymotion erro after Windows Update! 
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+			
+			
+			<li class="project-item  active" data-filter-item data-category="corporate">
+              <a href="https://raoshaab.medium.com/sudo-apt-update-is-too-slow-in-kali-linux-solution-is-here-21ba737252a4"    target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/b-9.jpg" alt="3cxsupplychain" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Personal</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-04-06">Apr 06, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Sudo apt update is too slow in Kali linux :( </h3>
+
+                  <p class="blog-text">
+                   Developed a script to update neareast and fastest mirror to update pkgs.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+			
+			
+			
+			<li class="project-item  active" data-filter-item data-category="corporate">
+              <a href="https://raoshaab.medium.com/donot-save-my-contact-telegram-bot-for-whatsapp-9dc9c6690953"    target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/b-7.jpg" alt="snip3" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Corporate</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-02-24">May 10, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Donot save my Contact Telegram bot for WhatsApp</h3>
+
+                  <p class="blog-text">
+                  Create a Telegram bot to message WhatsApp number without saving them in contacts.
+				  </p>
+
+                </div>
+
+              </a>
+            </li>
+			
+			
+
+
+
+			  <!--
+				Add Blogs here
+			  -->
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
