@@ -157,3 +157,44 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+//tracking the requests 
+
+
+async function getIPDetailsAndSendToStoreAPI(ipAddress) {
+  try {
+    // Step 1: Get IP details from ip-api.com , If you reading this , you can use the below key :) 
+    const ipApiUrl = `	https://pro.ip-api.com/json/?key=6KddQSe576qrfNb`;
+    const ipApiResponse = await fetch(ipApiUrl);
+
+    if (!ipApiResponse.ok) {
+      throw new Error(`Failed to fetch IP details from ip-api.com. Status: ${ipApiResponse.status}`);
+    }
+
+    const ipDetails = await ipApiResponse.json();
+
+    // Step 2: Send IP details to store-api
+    const storeApiUrl = 'https://rainisover.newid1.workers.dev/api/data'; 
+    const storeApiResponse = await fetch(storeApiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(ipDetails),
+    });
+
+    if (!storeApiResponse.ok) {
+      throw new Error(`Failed to send data to . Status: ${storeApiResponse.status}`);
+    }
+
+    const storeApiResult = await storeApiResponse.json();
+    console.log('Data sent successfully ', storeApiResult);
+  } catch (error) {
+    console.error('Error:', error.message);
+  }
+}
+
+// calling the function 
+getIPDetailsAndSendToStoreAPI()
+
+
